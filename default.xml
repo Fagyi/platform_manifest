@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="github"
+           fetch="https://github.com/" />
+           
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
@@ -290,7 +293,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs" />
+  <project path="frameworks/base" name="Fagyi/platform_frameworks_base" remote="github" revision="master" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -407,7 +410,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="Fagyi/platform_packages_apps_Settings" remote="github" revision="master" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -503,5 +506,6 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github" revision="cm-12.1" />
 
 </manifest>
